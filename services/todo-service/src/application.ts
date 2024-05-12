@@ -85,7 +85,7 @@ export class TodoServiceApplication extends BootMixin(
     this.component(BearerVerifierComponent);
     // Add authorization component
     this.bind(AuthorizationBindings.CONFIG).to({
-      allowAlwaysPaths: ['/explorer', '/openapi.json'],
+      allowAlwaysPaths: ['/explorer', '/openapi.json', '/todos'],
     });
     this.component(AuthorizationComponent);
 
